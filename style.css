@@ -1,0 +1,148 @@
+
+#container {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(255, 189, 47);
+    height: 800px;
+    overflow-y: auto;
+    color: #000;
+    border: 10px solid #4e042f;
+    border-radius: 10px;
+
+
+}
+
+#container h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#container ul {
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+#container ul li {
+    list-style: none;
+    border: 2px solid rgb(41, 69, 194);
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+
+}
+
+
+#container ul li label {
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#container ul li #check {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid gray;
+    position: relative;
+    outline: 0;
+
+
+}
+
+#container ul li #check:checked:after {
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: #000;
+}
+
+#container ul li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.3);
+
+}
+
+#container .controls {
+    width: 60%;
+    margin: auto;
+}
+
+#container .input #input {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+#container .controls #input:focus {
+    outline: 0;
+}
+
+#container .controls button {
+    width: 100%;
+    background: white;
+    border: none;
+    height: 30px;
+    margin-top: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+#container .controls button:focus {
+    outline: 0;
+}
+
+#container .controls button:hover {
+    transform: scale(1.03);
+}
+
+#container .controls #add {
+    border-radius: 10px;
+    background-color: rgb(31, 44, 168);
+
+}
+#container .controls #remove {
+    background-color: red;
+    border-radius: 10px;
+}
+
+#container .mycheck {
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+#input {
+    font-size: 20px;
+    width: 180px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 25px;
+    margin: 3px;
+    padding: 2px 10px;
+}
+
+#container .controls #removeEverything {
+    border-radius: 10px;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    background-color: green;
+}
